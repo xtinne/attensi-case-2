@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Figtree', Arial, Helvetica, sans-serif;
+	--font-display: 'Bricolage Grotesque', 'Figtree', Arial, Helvetica, sans-serif;
+	--color-text: #2b1d16;
+	--color-page: #fbf7f2;
+	--color-accent: #12828e;
+	--color-accent-hover: #0f6e78;
+	--color-accent-dark: #0f6e78;
+	--color-accent-light: #7fd3da;
+	--color-border: #eadfd4;
+	--color-border-strong: #d3c4b7;
+	--color-muted: #7a6558;
+	--color-placeholder: #98857a;
+	--color-field: #fffdfb;
+	--color-tint: #e3f3f3;
+	--color-sand: #f5efe8;
+	--color-warning: #8a5216;
+	--color-warning-tint: #fbeedd;
+	--color-success: #2f7a50;
+	--color-success-border: #9bd1b2;
+	--color-success-tint: #f2faf5;
+	--color-success-light: #8fe0b0;
+	--color-danger-tint: #fbe7e3;
+	--color-danger: #b5402c;
+	--color-danger-light: #f5a595;
+	--color-gold: #e8b04a;
+	--color-latte: #d9c9bb;
+	--color-cocoa: #3f2a1e;
+	--color-cocoa-dark: #33241a;
+	--color-cocoa-light: #5a3825;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	font-family: var(--font-sans);
+	color: var(--color-text);
+	background: var(--color-page);
+}
+
+@layer base {
+	h1 {
+		font-family: var(--font-display);
+		font-size: clamp(1.875rem, 4vw, 2.75rem);
+		line-height: 1.1;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
+
+	h2 {
+		font-size: 0.8125rem;
+		font-weight: 600;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--color-muted);
+	}
+}
